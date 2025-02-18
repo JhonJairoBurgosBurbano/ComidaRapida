@@ -7,3 +7,6 @@ src/
 │── App.jsx
 │── styles.css
 │── main.jsx
+
+Solo hace faltar instalar con npm i 
+Correrlo con npm start

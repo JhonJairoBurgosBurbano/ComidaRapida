@@ -1,9 +1,10 @@
-function Header() {
+// src/components/Header.jsx
+const Header = () => {
   return (
-    <header className="bg-blue-500 text-white py-4">
-      <h1 className="text-center text-2xl font-bold">Sangüich</h1>
-    </header>
+      <header className="header">
+          <h1>Sangüich</h1>
+      </header>
   );
-}
+};
 
 export default Header;

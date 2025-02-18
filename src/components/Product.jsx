@@ -6,7 +6,7 @@ const Product = ({ product, addToCart }) => {
             <h3>{product.name}</h3>
             <p>{product.description}</p>
             <p><strong>${product.price}</strong></p>
-            <button onClick={() => addToCart(product)}>Comprar ahora</button>
+            <button onClick={() => addToCart(product)}>🛒 Añadir al carrito</button>
         </div>
     );
 };
