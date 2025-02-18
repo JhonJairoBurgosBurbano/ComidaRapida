@@ -1,11 +1,16 @@
-function Cart() {
+// src/components/Cart.jsx
+const Cart = ({ cart, checkout }) => {
     return (
-      <div className="bg-white shadow-md rounded-lg p-4 mt-6">
-        <h2 className="text-xl font-semibold">Carrito de Compras</h2>
-        <p className="text-gray-600">No hay productos en el carrito.</p>
-      </div>
+        <div className="cart">
+            <h2>Carrito de compras</h2>
+            {cart.length === 0 ? (
+                <p>No hay productos en el carrito.</p>
+            ) : (
+                cart.map((item, index) => <p key={index}>{item.name} - ${item.price}</p>)
+            )}
+            <button onClick={checkout}>Comprar por WhatsApp</button>
+        </div>
     );
-  }
-  
-  export default Cart;
-  
+};
+
+export default Cart;
