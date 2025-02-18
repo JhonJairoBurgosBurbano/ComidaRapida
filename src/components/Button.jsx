@@ -1,10 +1,13 @@
-function Button({ text }) {
-    return (
-      <button className="mt-2 bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition">
-        {text}
-      </button>
-    );
-  }
-  
-  export default Button;
-  
+// src/components/Button.jsx
+import React from "react";
+import "../styles.css"; // Importamos estilos generales
+
+const Button = ({ text, onClick, className = "" }) => {
+  return (
+    <button className={`button ${className}`} onClick={onClick}>
+      {text}
+    </button>
+  );
+};
+
+export default Button;

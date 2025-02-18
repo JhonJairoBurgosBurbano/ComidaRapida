@@ -1,6 +1,7 @@
 // src/App.jsx
 import { useState, useEffect } from "react";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 import ProductList from "./components/ProductList";
 import Cart from "./components/Cart";
 import "./styles.css";
@@ -50,6 +51,7 @@ const App = () => {
                 <ProductList products={productsData} addToCart={addToCart} />
                 <Cart cart={cart} removeFromCart={removeFromCart} checkout={checkout} />
             </div>
+            <Footer />
         </div>
     );
 };
